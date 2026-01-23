@@ -1,0 +1,13 @@
+subirlo al repositorio remoto
+
+conectar al repositorio remoto: $ git remote add origin https://github.com/jucadigo/webResponsiveHTMLyCSS.git
+
+verifica respositorio remoto: $ git remote -v
+
+subir archivos al repositorio remoto, aqui se pone master porque asi se llama la rama: $ git push -u origin master
+
+git push sube los cambios al repositorio github, hay que hacerlo al final de hacer commits, al terminar de trabajar
+
+git pull trae los cambios que otros hicieron a mi pc en local
+
+git push y git pull se usan siempre
