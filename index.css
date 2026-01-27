@@ -17,6 +17,7 @@ h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
 p{ font-size: 1.25em; }
 ul{ list-style: none;}
+li{font-size: 1.25em;}
 
 
 /*botones*/
@@ -45,5 +46,63 @@ button:hover{
 
 header{
 	background-color: rgb(245, 245, 245);
+	
+}
+
+
+header .logo{	
+	margin: 0; /*reseteamos el margen de la cabecera*/
+	padding: 25px 30px;
+	font-weight: bold;
+	color: blueviolet;
+	font-size: 1.6em;
+}
+
+header .container{ /*centramos el contenedor de la cabecera*/
+	display: flex;
+    flex-direction: column;
+    align-items: center;	
+}
+
+header nav{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+	
+	
+}
+
+header a{  /*enlaces*/
+	padding: 5px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+
+header a:hover{
+	
+	color: blueviolet;
+}
+
+
+
+/*AHORA HACEMOS LA VERSION MOVIL*/        
+#hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height:100vh; /*cambia en base a la altura de la pantalla*/
+	color: white;
+	background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+	,url();
+	
 	
 }
