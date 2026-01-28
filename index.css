@@ -3,6 +3,11 @@
 }
 
 
+html{
+	/*animacion para que me lleve un enlace dentro de la misma pagina*/
+	scroll-behavior: smooth;
+}
+
 
 
 body{
@@ -40,8 +45,10 @@ button:hover{
 .container{
 	max-width: 1120px;
 	margin: auto;
-	
 }
+
+/*cambiar el color de la fuente*/
+.color-acento{color: blueviolet;}
 
 
 header{
@@ -102,7 +109,94 @@ header a:hover{
     rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
     )
-	,url();
+	,url("imagenes/hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; /*para que ocupe todo el espacio*/
+	background-position:center center; /*para centrar la imagen y ocupe todo el espacio*/
 	
 	
 }
+
+
+#hero h1{
+	
+	color: white;
+	
+}
+
+
+#somos-proya .container{
+	text-align: center;
+	padding: 200px 12px;
+	
+}
+
+#nuestros-programas{
+	background-color: rgb(30,30,30);
+	color: white;
+	text-align:center;
+}
+
+#nuestros-programas .container{
+	padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+	
+	margin-top: 0;
+}
+
+
+
+
+
+
+/*SECCION NUESTROS PROGRAMAS*/
+/*como son tres clases que se llaman carta, le asignamos numeros con first*/
+/*y nth entre parentesis el numero*/
+
+#nuestros-programas p{
+	display: none; /*ocultamos el texto*/
+}
+
+
+#nuestros-programas .carta{
+	background-position: center center;
+	background-size: cover;
+	padding: 50px;
+	margin: 20px;
+	border-radius: 15px;
+}
+
+
+.carta:first-child{
+	background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+	,url("imagenes/front-end.jpg");
+
+}
+
+.carta:nth-child(2){
+   	background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+	,url("imagenes/full-stack.jpg");
+}
+
+.carta:nth-child(3){
+	background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+	,url("imagenes/python.jpg");
+}
+
+
+
+
