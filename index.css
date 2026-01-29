@@ -121,7 +121,10 @@ header a:hover{
 #hero h1{
 	
 	color: white;
-	
+}
+
+#hero button{
+	font-size: 1.75em;
 }
 
 
@@ -130,6 +133,15 @@ header a:hover{
 	padding: 200px 12px;
 	
 }
+
+
+
+
+
+
+/*SECCION NUESTROS PROGRAMAS*/
+/*como son tres clases que se llaman carta, le asignamos numeros con first*/
+/*y nth entre parentesis el numero*/
 
 #nuestros-programas{
 	background-color: rgb(30,30,30);
@@ -142,18 +154,9 @@ header a:hover{
 }
 
 #nuestros-programas h2{
-	
 	margin-top: 0;
+	font-size: 3.2em;
 }
-
-
-
-
-
-
-/*SECCION NUESTROS PROGRAMAS*/
-/*como son tres clases que se llaman carta, le asignamos numeros con first*/
-/*y nth entre parentesis el numero*/
 
 #nuestros-programas p{
 	display: none; /*ocultamos el texto*/
@@ -199,4 +202,74 @@ header a:hover{
 
 
 
+/*-----SECCION CARACTERISTICAS-----*/
+#caracteristicas .container{
+	text-align: center;
+	padding: 215px 12px;
+}
 
+#caracteristicas li{
+	margin: 16px 0px;
+	font-weight: bold;
+}
+
+
+
+/*-------SECCION APLICA YA--------*/
+#final{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(30,30,30);
+	color: white;
+	height: 80vh;
+}
+
+#final h2{
+	/*tamaño relativo, que el texto este en una 
+	sola linea*/
+	font-size: 9vw;
+}
+
+
+#final button{
+	font-size: 5vw;
+}
+
+
+
+/*-------------FOOTER--------*/
+
+footer{
+  backgound-color: rgb(230,230,230);
+}
+
+/*sacar el margin del parrafo*/
+footer p{
+	margin: 0;
+	padding: 12px;
+	color: rgb(100,100,100);
+}
+
+
+footer .container{
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end /*se coloca en el centro pero al final del contenedor, en el borde*/
+}
+
+
+
+
+
+-----------------------------------------------------------------------------
+-----------------TAMAÑO PARA PANTALLAS MAS GRANDES---------------------------
+-----------------------------------------------------------------------------
+
+/*cuado la pantalla supere los 720px, se aplican los siguientes estilos*/
+@media (min-width: 720px){
+
+}
