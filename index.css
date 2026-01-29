@@ -69,6 +69,7 @@ header .container{ /*centramos el contenedor de la cabecera*/
 	display: flex;
     flex-direction: column;
     align-items: center;	
+
 }
 
 header nav{
@@ -243,7 +244,7 @@ header a:hover{
 /*-------------FOOTER--------*/
 
 footer{
-  backgound-color: rgb(230,230,230);
+  background-color: rgb(230,230,230);
 }
 
 /*sacar el margin del parrafo*/
@@ -265,11 +266,40 @@ footer .container{
 
 
 
------------------------------------------------------------------------------
+/*-----------------------------------------------------------------------------
 -----------------TAMAÑO PARA PANTALLAS MAS GRANDES---------------------------
------------------------------------------------------------------------------
+-----------------------------------------------------------------------------*/
 
 /*cuado la pantalla supere los 720px, se aplican los siguientes estilos*/
 @media (min-width: 720px){
-
+	
+	/*cambios en la cabecera*/
+	header{
+		position: fixed;
+		width: 100%;
+	}
+	
+   header .container{
+	   flex-direction: row;
+	   justify-content: space-between; /*los separa uno a la izquierda y el otro a la derecha*/
+   }
+   
+   header nav{
+	flex-direction: row;
+	padding-bottom: 0;
+	padding-right: 20px;
+   }
+   
+   #somos-proya .img-container{
+	   background-image: linear-gradient(
+	   0deg,
+	   rgba(0,0,0,0.5),
+	   rgba(0,0,0,0.5)
+	   ), url("imagenes/somos-proya.jpg");
+       background-size: cover;
+		background-position: center center;
+		height: 500px;
+		width: 400px;	   
+   }
+   
 }
