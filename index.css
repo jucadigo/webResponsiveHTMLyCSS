@@ -210,13 +210,20 @@ footer .container{
     align-items: flex-end;
 }
 
+
+
+
+
+/*-----------------------------------------------------------------------*/
+/*ESTILOS DE ESCRITORIO, AHORA IMPLEMENTAREMOS LOS MEDIA QUERY*/
+/*------------------------------------------------------------------------*/
 @media (min-width: 850px){
-    header{
+    header{ /*cabecera*/
         position: fixed;
         width: 100%;
     }
 
-    header .container{
+    header .container{  /*le colocamos los elementos de la cabecera en filas*/
         flex-direction: row;
         justify-content: space-between;
     }
@@ -231,6 +238,8 @@ footer .container{
         font-size: 5em;
     }
 
+
+/*------------SECCION SOMOS-PROYA------------*/
     #somos-proya .container{
         display: flex;
         justify-content: space-evenly;
@@ -240,7 +249,7 @@ footer .container{
         width: 50%;
         max-width: 600px;
         text-align: initial;
-        padding-left: 30px;
+		padding: 0px 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -257,7 +266,10 @@ footer .container{
         height: 500px;
         width: 400px; 
     }
-
+	
+	
+	
+/*-------------SECCION NUESTROS PROGRAMAS---------------*/
     #nuestros-programas .programas{
         display: flex;
         justify-content: center;
@@ -278,7 +290,7 @@ footer .container{
 
     #nuestros-programas .carta{
         padding: 50px;
-        background-size: 100% 150px;
+        background-size: 100% 150px; /*tamaño de imagen*/
         background-repeat: no-repeat;
         background-position-y: 0;
         background-color: rgba(50, 50, 50, 1);
@@ -318,7 +330,7 @@ footer .container{
         background-image: url("imagenes/background-2.jpeg");
         background-repeat: no-repeat;
         background-size: 500px 400px;
-        background-position: calc(100vw - 500px) 120px;
+        background-position: calc(100vw - 500px) 120px; /*con cal va variando la pantalla*/
     }
 
     #caracteristicas .container{
@@ -342,6 +354,8 @@ footer .container{
     }
 }
 
+
+/*modificacion del tamaño de la imagen de la seccion de caracteristicas*/
 @media (min-width: 1200px) {
     #caracteristicas{
         background-position-x: calc(100vw - 800px);
